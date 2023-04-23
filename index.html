@@ -3,13 +3,65 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Total Bill</title>
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 </head>
 
 <body>
-
+  <img class="logo" src="./images/logo.svg" alt="logo image">
+  <main>
+    <div class="container">
+      <div class="total-bill">
+        <label for="bill">Bill</label>
+        <input type="number" id="bill" name="bill">
+        <img class="dollar-img" src="./images/icon-dollar.svg" alt="dollar img">
+      </div>
+      <div class="tips">
+        <h4>Select Tip %</h4>
+        <div class="grid">
+          <div>5%</div>
+          <div>10%</div>
+          <div>15%</div>
+          <div>25%</div>
+          <div>50%</div>
+          <div class="custom"><input type="number" placeholder="Custom"></div>
+        </div>
+      </div>
+      <div class="total-people">
+        <div class="space-between">
+          <label for="total">Number of People</label>
+          <p class="hide">Can't be 0</p>
+        </div>
+        <input type="number" name="total" id="total-people">
+        <img class="dollar-img" src="./images/icon-person.svg" alt="">
+      </div>
+      <div class="result">
+        <div class="tip-amount">
+          <div class="tip-type">
+            <h4>Tip Amount</h4>
+            <p>/ person</p>
+          </div>
+          <h1 class="amount">$<span class="t">14.21</span></h1>
+        </div>
+        <div class="per-person">
+          <div class="tip-type">
+            <h4>Total</h4>
+            <p>/ person</p>
+          </div>
+          <h1 class="amount">$<span class="p">19.46</span></h1>
+        </div>
+        <button class="reset-btn"> Reset</button>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
 </body>
 
 </html>
