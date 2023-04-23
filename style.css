@@ -34,7 +34,7 @@ main {
   margin-top: 2rem;
   background-color: var(--White);
   width: 100%;
-  padding: 2rem;
+  padding: 2rem 1rem;
   border-radius: 20px;
 }
 main > .container {

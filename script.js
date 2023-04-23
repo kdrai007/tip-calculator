@@ -46,7 +46,7 @@ const handleResetBtn = () => {
   }
   if (invalidNum()) {
     calculate(parseInt(tipAmount), parseInt(bill), parseInt(noOfPeople));
-    // resetEverthing();
+    resetEverthing();
   }
 };
 resetBtn.addEventListener("click", handleResetBtn);
@@ -55,12 +55,6 @@ resetBtn.addEventListener("click", handleResetBtn);
 const TipAmountPerPerson = document.querySelector(".t");
 const TotalBillTotalPerson = document.querySelector(".p");
 function calculate(amount, bill, person) {
-  //   console.log(TipAmountPerPerson);
-  //   console.log(TotalBillTotalPerson);
-  console.log("amount ", amount);
-  console.log("bill ", bill);
-  console.log("person ", person);
-
   let totalTipAmount = (bill * amount) / 100 / person;
   let totalBillAmount = (bill + totalTipAmount) / person;
 
