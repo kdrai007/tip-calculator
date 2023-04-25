@@ -86,4 +86,6 @@ function resetEverthing() {
   totalPeople.value = "";
   totalBill.value = "";
   customTip.value = "";
+  TipAmountPerPerson.textContent = `0`;
+  TotalBillTotalPerson.textContent = `0`;
 }
