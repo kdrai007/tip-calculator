@@ -237,8 +237,12 @@ main > .result {
   }
 }
 @media screen and (min-width: 1500px) {
+  body {
+    height: 100vh;
+  }
   .logo {
-    margin-top: 1rem !important;
+    margin-top: 3rem !important;
+    margin-bottom: 3rem;
     width: 65px;
   }
   main {
