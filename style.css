@@ -212,7 +212,7 @@ main > .result {
   main {
     display: flex;
     flex-direction: row;
-    padding: 3rem;
+    padding: 2rem;
     gap: 2rem;
     max-width: 50rem;
   }
