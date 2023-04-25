@@ -267,6 +267,7 @@ main > .result {
   }
   .grid > div {
     font-size: 1.7rem;
+    cursor: pointer;
   }
   .custom > input::placeholder {
     text-align: center;
