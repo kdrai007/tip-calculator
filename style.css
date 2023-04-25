@@ -72,8 +72,7 @@ input[type="number"] {
   border-radius: 5px;
 }
 input[type="number"]:focus {
-  border: 2px solid var(--Strong-cyan);
-  outline: var(--Strong-cyan);
+  outline: 2px solid var(--Strong-cyan);
 }
 .dollar-img {
   width: 18px;

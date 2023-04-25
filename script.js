@@ -29,16 +29,17 @@ const handleTip = () => {
 };
 //Handling Number of People
 totalPeople.addEventListener("input", () => {
-  invalidNum();
+  if (!invalidNum()) return;
   if (totalPeople.value != "") {
     noOfPeople = totalPeople.value;
   }
+  handleTotalCalculation();
 });
 //calling tip function just in case
 handleTip();
 
 //handling Bill Reset Button
-const handleResetBtn = () => {
+function handleTotalCalculation() {
   if (customTip.value !== "") customAmount = customTip.value;
   handleTip();
   if (customAmount > 0) {
@@ -46,10 +47,8 @@ const handleResetBtn = () => {
   }
   if (invalidNum()) {
     calculate(parseInt(tipAmount), parseInt(bill), parseInt(noOfPeople));
-    resetEverthing();
   }
-};
-resetBtn.addEventListener("click", handleResetBtn);
+}
 
 //calculate tip
 const TipAmountPerPerson = document.querySelector(".t");
@@ -76,6 +75,9 @@ function invalidNum() {
     return true;
   }
 }
+resetBtn.addEventListener("click", () => {
+  resetEverthing();
+});
 function resetEverthing() {
   tipAmount = 0;
   customAmount = 0;
